@@ -173,7 +173,7 @@ CREATE TABLE `sys_usuarios` (
   `sys_usuario_correoElectronico` varchar(200) DEFAULT NULL,
   `sys_usuario_estadoUsuario` int(11) NOT NULL,
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated` datetime NULL DEFAULT,
   PRIMARY KEY (`sys_usuario_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
