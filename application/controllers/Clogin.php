@@ -6,6 +6,9 @@ class Clogin extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
+
+		$this->load->helper('url');
+		$this->load->library('tank_auth');
 	}
 
 	/**
@@ -26,7 +29,7 @@ class Clogin extends CI_Controller
 		$data["usuario"] = $this->input->post("usuario");
 		$data["clave"] = $this->input->post("clave");
 
-		$this->load->model('Musuarios');
+		$this->load->model('Msys/Musuarios');
 
 		$data['credenciales'] = $this->Musuarios->get_usuario_login($data["usuario"],$data["clave"]);
 

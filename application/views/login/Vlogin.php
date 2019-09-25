@@ -38,14 +38,14 @@
                         </div>
 
                         <!-- title-->
-                        <h4 class="mt-0">Iniciar cesión</h4>
+                        <h4 class="mt-0">Iniciar sesión</h4>
                         <p class="text-muted mb-4">Ingrese su usuario y contraseña para acceder al sistema.</p>
 
                         <!-- form -->
-                        <form action="#">
+                        <form action="<?php echo base_url(); ?>Clogin/validar_usuario" method="post">
                             <div class="form-group">
-                                <label for="emailaddress">Usuario</label>
-                                <input class="form-control" type="email" id="emailaddress" required="" placeholder="Ingrese su usuario">
+                                <label for="usuario">Usuario</label>
+                                <input class="form-control" type="text" id="emailaddress" required="" placeholder="Ingrese su usuario">
                             </div>
                             <div class="form-group">
                                 <label for="password">Contraseña</label>
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="form-group mb-0 text-center">
-                                <button class="btn btn-primary btn-block" type="submit"><i class="mdi mdi-login"></i> Iniciar cesión </button>
+                                <button class="btn btn-primary btn-block" type="submit"><i class="mdi mdi-login"></i> Iniciar sesión </button>
                             </div>
                             
                         </form>

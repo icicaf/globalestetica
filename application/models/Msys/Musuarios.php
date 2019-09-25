@@ -1,11 +1,11 @@
 <?php
 /**
-*   Clase Mcession Modelo
+*   Clase Musuarios Modelo
 *
 *   @author     Cristian Aguayo Forteza
 *   @since      Version 1.0
 */
-class Mcession extends CI_Model
+class Musuarios extends CI_Model
 {
     function __construct()
     {

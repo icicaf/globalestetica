@@ -7,10 +7,18 @@ class Csys extends CI_Controller
 	{
 		parent::__construct();
 		
-		if($this->session->userdata('logged_in') != TRUE)
+		if ($this->tank_auth->is_logged_in()) 
+		{									// logged in
+			
+		}
+		else
 		{
 			redirect(base_url());
 		}
+		// if($this->session->userdata('logged_in') != TRUE)
+		// {
+		// 	redirect(base_url());
+		// }
     }
 
 	/**
