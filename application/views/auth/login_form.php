@@ -6,7 +6,7 @@ $login = array(
 	'maxlength'	=> 80,
 	'class' => 'form-control',
 	'required' => '',
-	'placeholder' => 'Enter your email',
+	'placeholder' => 'Ingrese su usuario',
 );
 if ($login_by_username AND $login_by_email) {
 	$login_label = 'Email or login';
@@ -20,7 +20,7 @@ $password = array(
 	'id'	=> 'password',
 	'class' => 'form-control',
 	'required' => '',
-	'placeholder' => 'Enter your email',
+	'placeholder' => 'Ingrese su contraseña',
 );
 $remember = array(
 	'name'	=> 'remember',
@@ -67,7 +67,6 @@ $captcha = array(
 
     </head>
     <body>
-
         <body class="auth-fluid-pages pb-0">
 
         <div class="auth-fluid">
@@ -89,12 +88,12 @@ $captcha = array(
 
 						<?php echo form_open($this->uri->uri_string()); ?>
 						 <div class="form-group">
-						 	<label><?php echo form_label($login_label, $login['id'], 'form-control'); ?></label>
+						 	<label><?php echo form_label('Usuario', $login['id'], 'form-control'); ?></label>
 							<?php echo form_input($login); ?>
 							<p style="color: red;"><?php echo form_error($login['name']); ?><?php echo isset($errors[$login['name']])?$errors[$login['name']]:''; ?></p>
 						</div>
 						<div class="form-group">
-							<label><?php echo form_label('Password', $password['id']); ?></label>
+							<label><?php echo form_label('Contraseña', $password['id']); ?></label>
 							<?php echo form_password($password); ?>
 							<p style="color: red;"><?php echo form_error($password['name']); ?><?php echo isset($errors[$password['name']])?$errors[$password['name']]:''; ?></p>
 						</div>
@@ -106,9 +105,7 @@ $captcha = array(
 					{ 
 			?>
 						<div class="form-group text-center">
-							
 							<div id="recaptcha_image"></div>
-							
 							<a href="javascript:Recaptcha.reload()">Get another CAPTCHA</a>
 							<div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')">Get an audio CAPTCHA</a></div>
 							<div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')">Get an image CAPTCHA</a></div>
@@ -128,7 +125,6 @@ $captcha = array(
 						<div class="form-group" >
 								<!--<p>Enter the code exactly as it appears:</p> -->
 							<p><?php echo $captcha_html; ?></p>
-						
 							<?php echo form_input($captcha); ?>
 							<label style="color: red;"><?php echo form_error($captcha['name']); ?></label>
 						</div>
@@ -174,7 +170,5 @@ $captcha = array(
         <!-- App js 
         echo base_url(); ?>/assets/js/app.js"></script> 
         -->
-
-
 	</body>
 </html>
