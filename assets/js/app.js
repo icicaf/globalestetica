@@ -24994,8 +24994,8 @@ function ($) {
     LeftSidebar.prototype._reset = function() {
         this.body.removeAttr('data-leftbar-theme');
         // this.body.removeAttr('data-leftbar-compact-mode');
-        $('#side-main-logo').attr('src', 'assets/images/logo.png');
-        $('#side-sm-main-logo').attr('src', 'assets/images/logo_sm.png');
+        $('#side-main-logo').attr('src', '../assets/images/logo.png');
+        $('#side-sm-main-logo').attr('src', '../assets/images/logo_sm.png');
     },
 
     /**
@@ -25520,11 +25520,11 @@ function ($) {
         this.horizontalTopbarPH = $('#horizontal-topbar-placeholder');
 
         this._partials = {
-            VERTICAL_SIDEBAR: './partials/left-sidebar.html',
-            VERTICAL_TOPBAR: './partials/topbar.html',
-            DETAHCED_TOPBAR: './partials/topbar-dark.html',
-            DETAHCED_SIDEBAR: './partials/detached-left-sidebar.html',
-            HORIZONTAL_TOPBAR: './partials/horizontal-nav.html',
+            VERTICAL_SIDEBAR: './assets/partials/left-sidebar.php',
+            VERTICAL_TOPBAR: './assets/partials/topbar.html',
+            DETAHCED_TOPBAR: './assets/partials/topbar-dark.html',
+            DETAHCED_SIDEBAR: './assets/partials/detached-left-sidebar.html',
+            HORIZONTAL_TOPBAR: './assets/partials/horizontal-nav.html',
         };
 
         this.currentlyActivatedLayout = LAYOUT_VERTICAL;

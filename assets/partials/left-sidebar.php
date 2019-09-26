@@ -1,3 +1,4 @@
+
 <!-- ========== Left Sidebar Start ========== -->
 <div class="left-side-menu">
 
@@ -6,7 +7,7 @@
         <!-- LOGO -->
         <a href="index.html" class="logo text-center">
             <span class="logo-lg">
-                <img src="assets/images/logo.png" alt="" height="16" id="side-main-logo">
+                <img src="/assets/images/logo.png" alt="" height="16" id="side-main-logo">
             </span>
             <span class="logo-sm">
                 <img src="assets/images/logo_sm.png" alt="" height="16" id="side-sm-main-logo">

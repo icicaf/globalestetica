@@ -1,12 +1,18 @@
+ <!-- Footer Start -->
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center">
-            	<p class="text-muted text-nowrap m-b-10">IOTSYS 
-                 <div id="box-date" align="center"></div>   
-                </p> 
-                <!-- <p>Pagina cargada en {elapsed_time} segundos.</p> -->
+            <div class="col-md-6">
+                2018 - 2019 © Hyper - Coderthemes.com
+            </div>
+            <div class="col-md-6">
+                <div class="text-md-right footer-links d-none d-md-block">
+                    <a href="javascript: void(0);">About</a>
+                    <a href="javascript: void(0);">Support</a>
+                    <a href="javascript: void(0);">Contact Us</a>
+                </div>
             </div>
         </div>
     </div>
 </footer>
+<!-- end Footer -->

@@ -28,32 +28,32 @@ class Csys extends CI_Controller
 	public function index()
 	{
 		//Se carga html_head solo el head del sistema y todos los css y los script
-		$data["html_head"] = $this->get_htmlHead(); 
+		//$data["html_head"] = $this->get_htmlHead(); 
 
 		//Se carga el html_topbar menu (Salir del sistema, barrara de usuario, etc.)
-		$data["html_topbar"] = $this->get_htmlTopbar();
+		//$data["html_topbar"] = $this->get_htmlTopbar();
 
 		//Se carga el html_topmenu el cual es la barra de menu que maneja el acceso a los modulos y menus y submenus
-		$data["html_topmenu"] = $this->get_htmlTopmenu();
+		//$data["html_topmenu"] = $this->get_htmlTopmenu();
 
 		//Se carga el titulo de la pagina (donde estoy oarado...)
-		$data["html_breadcrumb"] = $this->get_htmlBreadcrumb();
+		//$data["html_breadcrumb"] = $this->get_htmlBreadcrumb();
 
 		//Se carga el contenido de las paginas
-		$data["html_bodycentral"] = $this->get_htmlBodycentral();
+		//$data["html_bodycentral"] = $this->get_htmlBodycentral();
 
 		//Se carga el pie de pagina
-		$data["html_footer"] = $this->get_htmlFooter();
+		//$data["html_footer"] = $this->get_htmlFooter();
 
 		//Scipt SISTEMA, se cargan al final
-		$data["html_scripts"] = $this->get_htmlScipts();
+		//$data["html_scripts"] = $this->get_htmlScipts();
 
 		//Par cada Modulo se carga su Script
-		$data["script_inicio"] = $this->modulo_inicio();
+		//$data["script_inicio"] = $this->modulo_inicio();
 
 		//Modulo inicio, se carga el inicio como primera vista
 		//Modulo Carga Vistas
-		$this->load->view('sys/Vsys',$data);
+		$this->load->view('sys/Vsys');
 	}
 
 	// Moudulo de inicio
