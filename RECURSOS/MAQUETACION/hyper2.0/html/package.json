@@ -70,7 +70,7 @@
     "jquery-ui": "git+https://github.com/components/jqueryui.git#1.11.4",
     "jqvmap": "^1.5.1",
     "metismenu": "^3.0.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "popper.js": "^1.15.0",
     "select2": "^4.0.7-rc.0",
     "simplemde": "^1.11.2",
