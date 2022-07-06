@@ -55,7 +55,7 @@
     "moment": "^2.24.0",
     "moment-locales-webpack-plugin": "^1.0.7",
     "popper.js": "^1.15.0",
-    "select2": "^4.0.6-rc.1",
+    "select2": "^4.0.6",
     "simplemde": "^1.11.2",
     "summernote": "^0.8.11",
     "twitter-bootstrap-wizard": "^1.2.0",
